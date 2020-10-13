@@ -1,0 +1,268 @@
+/*
+    Font-titel-header: 'Playfair Display', serif;
+    Font-brödtext: 'Roboto Mono', monospace;
+    Header-Background rgba(0, 0, 0, 0.4)
+    Aboutme-Title #cdf0c5
+    Work-Title #e0aade
+    Contact-title #63B4D1
+
+    CV-Border #E396DF
+    CV-Fill #f1d4f0
+
+*/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+/* HEADER */
+.header {
+    padding: 1rem;
+    text-align: center;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position-x: center;
+    background-color:#b5b5b5;
+    height: 95vh;
+    margin: 2rem 2rem
+  }
+
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 3rem;
+    line-height: 3rem;
+    font-weight: 300;
+}
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+}
+
+
+.title-name {
+    margin-top: 20%;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 400%;
+}
+
+/* ABOUT ME */
+#who-am-i {
+    background-color:#cdf0c5 ;
+}
+.about-me {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-main {
+    padding: 1rem 2rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 170%;
+    font-weight: 700;
+    border-bottom: 1rem solid #ffff;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.text-box {
+    display: inline-block;
+    width: 50%;
+    line-height: 4.5rem;
+    padding: 2rem 4rem;
+    font-size: 120%;
+
+}
+.pic-gallery {
+    display: inline-block;
+}
+.pic-gallery-wrapper {
+    display: inline-block;
+}
+.img__img {
+    width: 21rem;
+}
+.img__wrap {
+    position: relative;
+    float: left;
+    text-align: center;
+  }
+  
+.img__description {
+    position: absolute;
+    top: auto;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    color: #000;
+    visibility: hidden;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+.img__wrap:hover .img__img {
+    opacity: 0.25;
+}
+
+/* WHAT HAVE I DONE */
+#CV {
+    background-color:#e0aade;
+}
+.work {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.work-title {
+    clear: both;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: block;
+}
+.workplace {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    display: block;
+}
+.work-description {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+.time{
+    font-size: 1.5rem;
+}
+.schools,
+.skills,
+.jobs {
+    margin: 1rem 1rem;
+    width: 31.5%;
+}
+
+.school,
+.job,
+.skill {
+    margin: 1rem 0;
+    padding: 2rem 1rem;
+    border: .3rem solid #E396DF;
+    background-color: #f1d4f0;
+}
+
+.big {
+    text-align: center;
+    border: .3rem solid #E396DF;
+    background-color:  #f1d4f0;
+    text-transform: none;
+}
+
+
+
+/* CONTACT */
+#contact {
+    background-color: #63B4D1;
+}
+.contact {
+    height: 100vh;
+}
+.contactinfo {
+    margin: 0 10rem;
+}
+.contactinfo p {
+    margin: 3rem 0;
+    clear: both;
+    font-size: 120%;
+}
+
+
+/* NAVBUTTON */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: #b5b5b5;
+  }
+  
+  .sidebar a {
+    padding: 0.8rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #201f1f;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+    font-size: 3.6rem;
+    margin-left: 5rem;
+  }
+  
+  .openbtn {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(7, 7, 7);
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 10%;
+  }
+  
+  .openbtn:hover {
+    background-color: #646464;
+    color: #f1f1f1;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 1.6rem;
+  }
+
+ .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+  }
+
+
+
+
