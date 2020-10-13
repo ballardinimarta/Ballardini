@@ -23,16 +23,19 @@ $(document).ready(function(){
   });
 });
 
-// Function to open and close sidebar
+
+
 function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  var sidebar = document.getElementById('mySidebar');
+  var button = document.getElementById('main');
+  var buttonicon = document.getElementById('icon');
+
+  sidebar.classList.toggle('opened-sidebar');
+  button.classList.toggle('opened-button');
+  buttonicon.classList.toggle('crossicon');
 }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
+
 
 // Function to change the color of the sidebar depending on which section you are on scroll
 $(document).ready(function () {
