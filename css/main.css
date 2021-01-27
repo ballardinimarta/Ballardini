@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+  html body {
+    font-family: 'Roboto Mono', monospace; }
+    html body #navDiv {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      z-index: 2; }
+      html body #navDiv #navButton {
+        border: none;
+        background-color: transparent; }
+        html body #navDiv #navButton i {
+          font-size: 30px;
+          color: black; }
+        html body #navDiv #navButton #times {
+          display: none; }
+    html body #mySidebar {
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      background-color: #d6ccfc;
+      z-index: 1;
+      width: 0px; }
+      html body #mySidebar a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #201f1f;
+        display: block;
+        transition: 0.3s; }
+      html body #mySidebar a:hover {
+        color: #f1f1f1; }
+    html body #header {
+      color: #ffffff;
+      background-color: #d6ccfc;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      html body #header #nameTitle {
+        text-transform: uppercase;
+        font-family: 'Hanalei', cursive;
+        font-size: 500%; }
+        @media (max-width: 500px) {
+          html body #header #nameTitle {
+            font-size: 200%; } }
+      html body #header #headingNav {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row; }
+        @media (max-width: 500px) {
+          html body #header #headingNav {
+            flex-direction: column;
+            justify-content: space-between; } }
+        html body #header #headingNav .link {
+          text-decoration: none;
+          color: inherit;
+          margin-left: 30px;
+          line-height: 30px;
+          font-weight: 300;
+          font-size: 20px; }
+          @media (max-width: 500px) {
+            html body #header #headingNav .link {
+              margin: 0;
+              padding: 20px; } }
+        html body #header #headingNav .link:hover {
+          background-color: rgba(0, 0, 0, 0.4);
+          font-weight: 700; }
+    html body .title-main {
+      padding: 20px 0px;
+      text-align: center;
+      font-size: 170%;
+      margin: 0;
+      width: 100%; }
+      @media (max-width: 500px) {
+        html body .title-main {
+          font-size: 150%; } }
+    html body #about-me-section #who-am-i {
+      background-color: #cdf0c5; }
+    html body #about-me-section #aboutmewrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      @media (max-width: 800px) {
+        html body #about-me-section #aboutmewrapper {
+          justify-content: center;
+          flex-direction: column;
+          align-items: center; } }
+      @media (max-width: 500px) {
+        html body #about-me-section #aboutmewrapper {
+          justify-content: center;
+          flex-direction: column;
+          align-items: center; } }
+      html body #about-me-section #aboutmewrapper #text-box {
+        width: 30%;
+        padding: 20px 40px;
+        font-size: 120%;
+        line-height: 30px; }
+        @media (max-width: 800px) {
+          html body #about-me-section #aboutmewrapper #text-box {
+            font-size: 16px;
+            width: 80%; } }
+        @media (max-width: 500px) {
+          html body #about-me-section #aboutmewrapper #text-box {
+            font-size: 12px;
+            width: 100%;
+            padding: 0; } }
+        @media (max-width: 500px) {
+          html body #about-me-section #aboutmewrapper #text-box p {
+            padding: 10px; } }
+      html body #about-me-section #aboutmewrapper .pic-gallery-wrapper {
+        display: inline-block;
+        padding: 20px 0px; }
+        html body #about-me-section #aboutmewrapper .pic-gallery-wrapper .pic-gallery {
+          display: inline-block;
+          z-index: 0; }
+          html body #about-me-section #aboutmewrapper .pic-gallery-wrapper .pic-gallery .img__wrap {
+            position: relative;
+            float: left;
+            text-align: center; }
+            html body #about-me-section #aboutmewrapper .pic-gallery-wrapper .pic-gallery .img__wrap .img__img {
+              height: 300px; }
+              @media (max-width: 800px) {
+                html body #about-me-section #aboutmewrapper .pic-gallery-wrapper .pic-gallery .img__wrap .img__img {
+                  height: 200px; } }
+              @media (max-width: 500px) {
+                html body #about-me-section #aboutmewrapper .pic-gallery-wrapper .pic-gallery .img__wrap .img__img {
+                  height: 130px; } }
+            html body #about-me-section #aboutmewrapper .pic-gallery-wrapper .pic-gallery .img__wrap .img__description {
+              position: absolute;
+              top: auto;
+              bottom: 2rem;
+              left: 0;
+              right: 0;
+              color: #000;
+              visibility: hidden;
+              opacity: 0;
+              transition: opacity .2s, visibility .2s; }
+              @media (max-width: 500px) {
+                html body #about-me-section #aboutmewrapper .pic-gallery-wrapper .pic-gallery .img__wrap .img__description {
+                  font-size: 12px; } }
+          html body #about-me-section #aboutmewrapper .pic-gallery-wrapper .pic-gallery .img__wrap:hover .img__description {
+            visibility: visible;
+            opacity: 1; }
+          html body #about-me-section #aboutmewrapper .pic-gallery-wrapper .pic-gallery .img__wrap:hover .img__img {
+            opacity: 0.25; }
+    html body #work-section #CV {
+      background-color: #e0aade; }
+    html body #work-section #workwrapper {
+      display: flex;
+      justify-content: center; }
+      @media (max-width: 800px) {
+        html body #work-section #workwrapper {
+          flex-direction: column;
+          align-items: center; } }
+      @media (max-width: 500px) {
+        html body #work-section #workwrapper {
+          flex-direction: column;
+          align-items: center; } }
+      html body #work-section #workwrapper #schools,
+      html body #work-section #workwrapper #skills,
+      html body #work-section #workwrapper #jobs {
+        margin: 10px 10px;
+        width: 31.5%; }
+        @media (max-width: 800px) {
+          html body #work-section #workwrapper #schools,
+          html body #work-section #workwrapper #skills,
+          html body #work-section #workwrapper #jobs {
+            width: 90%;
+            margin: 10px 0; } }
+        @media (max-width: 500px) {
+          html body #work-section #workwrapper #schools,
+          html body #work-section #workwrapper #skills,
+          html body #work-section #workwrapper #jobs {
+            width: 90%;
+            margin: 10px 0; } }
+        html body #work-section #workwrapper #schools .big,
+        html body #work-section #workwrapper #skills .big,
+        html body #work-section #workwrapper #jobs .big {
+          text-transform: uppercase;
+          font-size: 150%;
+          text-align: center;
+          border: 3px solid #E396DF;
+          background-color: #f1d4f0; }
+          @media (max-width: 500px) {
+            html body #work-section #workwrapper #schools .big,
+            html body #work-section #workwrapper #skills .big,
+            html body #work-section #workwrapper #jobs .big {
+              font-size: 100%; } }
+        html body #work-section #workwrapper #schools .school,
+        html body #work-section #workwrapper #schools .job,
+        html body #work-section #workwrapper #schools .skill,
+        html body #work-section #workwrapper #skills .school,
+        html body #work-section #workwrapper #skills .job,
+        html body #work-section #workwrapper #skills .skill,
+        html body #work-section #workwrapper #jobs .school,
+        html body #work-section #workwrapper #jobs .job,
+        html body #work-section #workwrapper #jobs .skill {
+          margin: 10px 0;
+          padding: 20px 10px;
+          border: 3px solid #E396DF;
+          background-color: #f1d4f0; }
+          @media (max-width: 500px) {
+            html body #work-section #workwrapper #schools .school em,
+            html body #work-section #workwrapper #schools .job em,
+            html body #work-section #workwrapper #schools .skill em,
+            html body #work-section #workwrapper #skills .school em,
+            html body #work-section #workwrapper #skills .job em,
+            html body #work-section #workwrapper #skills .skill em,
+            html body #work-section #workwrapper #jobs .school em,
+            html body #work-section #workwrapper #jobs .job em,
+            html body #work-section #workwrapper #jobs .skill em {
+              font-size: 13px; } }
+          @media (max-width: 500px) {
+            html body #work-section #workwrapper #schools .school p,
+            html body #work-section #workwrapper #schools .job p,
+            html body #work-section #workwrapper #schools .skill p,
+            html body #work-section #workwrapper #skills .school p,
+            html body #work-section #workwrapper #skills .job p,
+            html body #work-section #workwrapper #skills .skill p,
+            html body #work-section #workwrapper #jobs .school p,
+            html body #work-section #workwrapper #jobs .job p,
+            html body #work-section #workwrapper #jobs .skill p {
+              font-size: 12px; } }
+          html body #work-section #workwrapper #schools .school .work-title,
+          html body #work-section #workwrapper #schools .job .work-title,
+          html body #work-section #workwrapper #schools .skill .work-title,
+          html body #work-section #workwrapper #skills .school .work-title,
+          html body #work-section #workwrapper #skills .job .work-title,
+          html body #work-section #workwrapper #skills .skill .work-title,
+          html body #work-section #workwrapper #jobs .school .work-title,
+          html body #work-section #workwrapper #jobs .job .work-title,
+          html body #work-section #workwrapper #jobs .skill .work-title {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 150%;
+            display: block; }
+            @media (max-width: 500px) {
+              html body #work-section #workwrapper #schools .school .work-title,
+              html body #work-section #workwrapper #schools .job .work-title,
+              html body #work-section #workwrapper #schools .skill .work-title,
+              html body #work-section #workwrapper #skills .school .work-title,
+              html body #work-section #workwrapper #skills .job .work-title,
+              html body #work-section #workwrapper #skills .skill .work-title,
+              html body #work-section #workwrapper #jobs .school .work-title,
+              html body #work-section #workwrapper #jobs .job .work-title,
+              html body #work-section #workwrapper #jobs .skill .work-title {
+                font-size: 14px; } }
+    html body #contact-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      html body #contact-section #contact {
+        background-color: #63B4D1; }
+      html body #contact-section .contactinfo {
+        padding: 20px 0; }
+        html body #contact-section .contactinfo p {
+          padding: 10px;
+          font-size: 120%; }
+          @media (max-width: 800px) {
+            html body #contact-section .contactinfo p {
+              font-size: 16px; } }
+          @media (max-width: 500px) {
+            html body #contact-section .contactinfo p {
+              font-size: 12px; } }
+        html body #contact-section .contactinfo a {
+          color: inherit; }
+      html body #contact-section #socials {
+        padding: 20px 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row; }
+        html body #contact-section #socials a {
+          font-size: 40px;
+          padding: 20px;
+          color: black;
+          text-decoration: none; }
+          @media (max-width: 500px) {
+            html body #contact-section #socials a {
+              font-size: 30px; } }
+      html body #contact-section img {
+        height: 300px;
+        padding: 10px; }
+      html body #contact-section p {
+        padding: 20px; }

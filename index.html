@@ -4,150 +4,166 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Märta Ballardini</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="/css/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
-    
+        <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="script.js"></script>
+        <link rel="stylesheet" href="/css/main.css">
+
         <script src="https://kit.fontawesome.com/8ba7ccfbdc.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div id="mySidebar" class="sidebar">
+            <a class="link" href="#header">Start.</a>
             <a class="link" href="#who-am-i">Who am i ?</a>
             <a class="link" href="#CV">CV.</a>
             <a class="link" href="#contact">Contact.</a>
         </div>
-          
-        <div id="main" class="sticky">
-            <button id="icon" class="openbtn" onclick="openNav()"><i id="bars" class="fas fa-bars"></i><i id="times" class="fas fa-times"></i></button>  
+        <div id="navDiv">
+            <button id="navButton">
+                <i id="bars" class="fas fa-bars"></i>
+                <i id="times" class="fas fa-times"></i>
+            </button>
         </div>
 
-        <header class="header">
-        
-            <h1 class="title-name">Märta Ballardini</h1>
-            <a class="link" href="#who-am-i">Who am i ?</a>
-            <a class="link" href="#CV">CV.</a>
-            <a class="link" href="#contact">Contact.</a>
+        <header id="header">
+            <h1 id="nameTitle">Märta Ballardini</h1>
+            <ul id="headingNav">
+                <li><a class="link" href="#who-am-i">Who am i ?</a></li>
+                <li><a class="link" href="#CV">CV.</a></li>
+                <li><a class="link" href="#contact">Contact.</a></li>
+            </ul>
         </header>
-        <h2 id="who-am-i" class="title-main">Who am i?</h2>
+
         
         <section  id="about-me-section"class="about-me" >
-            <div class="text-box">
-                <p>My name is Märta Ballardini, i'm nineteen years old and live in Stockholm, Sweden.<br><br>
-                    I aspire to become a FrontEnd Developer, and i have started the Front End Developer Program at Medieinstitutet.<br><br>
-                    On my free time i like to hang out with my friends and especially to be with my boyfriend Simon.<br><br>
-                    I really enjoy doing makeup to entertain my creative side, and i have accumulated a disturbing ammount of makeup as a person that for a long time did not have a full time job.
-                </p>
-            </div>
-            <div class="pic-gallery-wrapper">
-                <div class="pic-gallery">
-                    <ul>
-                        <div class="img__wrap">
-                            <img class="img__img" src="img/smink.jpg" />
-                            <p class="img__description">A pic of me.</p>
-                        </div>
-                        <div class="img__wrap">
-                            <img class="img__img" src="img/molly.jpg"/>
-                            <p class="img__description">My friend Molly.</p>
-                        </div>
-                        <div class="img__wrap">
-                            <img class="img__img" src="img/wilma.png" />
-                            <p class="img__description">My friend Wilma.</p>
-                        </div>
-                    </ul>
-                    <ul>
-                        <div class="img__wrap">
-                            <img class="img__img" src="img/midsommar.jpg" />
-                            <p class="img__description">Some of my friends celebrating midsummer.</p>
-                        </div>
-                        <div class="img__wrap">
-                            <img class="img__img" src="img/simon.jpg" />
-                            <p class="img__description">My boyfriend Simon.</p>
-                        </div>
-                        <div class="img__wrap">
-                            <img class="img__img" src="img/mirre.jpg" />
-                            <p class="img__description">My friend Miriam.</p>
-                        </div>
-                    </ul>
+            <h2 id="who-am-i" class="title-main">Who am i?</h2>
+            <div id="aboutmewrapper">
+                <div id="text-box">
+                    <p>My name is Märta Ballardini, i'm twenty years old and live in Stockholm, Sweden.<br><br>
+                        I aspire to become a FrontEnd Developer, and i have started the Front End Developer Program at Medieinstitutet.<br><br>
+                        On my free time i like to hang out with my friends and especially to be with my boyfriend Simon.<br><br>
+                        I really enjoy doing makeup to entertain my creative side, and i have accumulated a disturbing ammount of makeup as a person that for a long time did not have a full time job.
+                    </p>
                 </div>
-        </div>
+                <div class="pic-gallery-wrapper">
+                    <div class="pic-gallery">
+                        <ul>
+                            <div class="img__wrap">
+                                <img class="img__img" src="img/smink.jpg" />
+                                <p class="img__description">A pic of me.</p>
+                            </div>
+                            <div class="img__wrap">
+                                <img class="img__img" src="img/molly.jpg"/>
+                                <p class="img__description">My friend Molly.</p>
+                            </div>
+                            <div class="img__wrap">
+                                <img class="img__img" src="img/wilma.png" />
+                                <p class="img__description">My friend Wilma.</p>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div class="img__wrap">
+                                <img class="img__img" src="img/midsommar.jpg" />
+                                <p class="img__description">Some of my friends celebrating midsummer.</p>
+                            </div>
+                            <div class="img__wrap">
+                                <img class="img__img" src="img/simon.jpg" />
+                                <p class="img__description">My boyfriend Simon.</p>
+                            </div>
+                            <div class="img__wrap">
+                                <img class="img__img" src="img/mirre.jpg" />
+                                <p class="img__description">My friend Miriam.</p>
+                            </div>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+            
         </section>            
-        <h2 id="CV" class="title-main">CV</h2>
 
-        <section id="work-section" class="work" >
-            <div class="jobs">  
-                <h3 class="work-title big">Jobs</h3>
-    
-                <div class="job">
-                    <strong class="work-title job-title">Internship</strong>
-                    <em class="workplace job-company">Internet Stiftelsen</em>
-                    <p class="work-description job-description">A paid internship, where i used python for visualization of DNS-data. <br> Full time</p>
-                    <p class="time">From January 2020 To May 2020</p>
+        <section id="work-section" >
+            <h2 id="CV" class="title-main">CV</h2>
+            <div id="workwrapper">
+                <div id="jobs">  
+                    <h3 class="big">Jobs</h3>
+        
+                    <div class="job">
+                        <strong class="work-title job-title">Internship</strong>
+                        <em class="workplace job-company">Internet Stiftelsen</em>
+                        <p class="work-description job-description">A paid internship, where i used python for visualization of DNS-data. <br> Full time</p>
+                        <p class="time">From January 2020 To May 2020</p>
+                    </div>
+                    <div class="job">
+                        <strong class="work-title job-title">Bartender/Runner</strong>
+                        <em class="workplace job-company">Ingmarsö Krog</em>
+                        <p class="work-description job-description"> Worked 50% in the bar and 50% in the dishes, i also helped to go out with food and drinks.<br> Full time</p>
+                        <p class="time">From June 2020 To August 2020</p>
+                    </div>      
+                    
+                    <div class="job">
+                        <strong class="work-title job-title">Store clerk</strong>
+                        <em class="workplace job-company">Pressbyrån Slussen</em>
+                        <p class="work-description job-description">Opened and closed the store by my self, and worked in the register.<br> Full time</p>
+                        <p class="time">From August 2019 To January 2020</p>
+                    </div>
                 </div>
-                <div class="job">
-                    <strong class="work-title job-title">Bartender/Runner</strong>
-                    <em class="workplace job-company">Ingmarsö Krog</em>
-                    <p class="work-description job-description"> Worked 50% in the bar and 50% in the dishes, i also helped to go out with food and drinks.<br> Full time</p>
-                    <p class="time">From June 2020 To August 2020</p>
-                </div>      
-                
-                <div class="job">
-                    <strong class="work-title job-title">Store clerk</strong>
-                    <em class="workplace job-company">Pressbyrån Slussen</em>
-                    <p class="work-description job-description">Opened and closed the store by my self, and worked in the register.<br> Full time</p>
-                    <p class="time">From August 2019 To January 2020</p>
+                <div id="schools">
+                    <h3 class="work-title big">Education</h3>
+                    <div class="school">
+                        <strong class="work-title school-title">Vocational university</strong>
+                        <em class="workplace school-company">Medieinstitutet</em>
+                        <p class="work-description school-description">Studying the program Front End Developer at Medieinstitutet.</p>
+                        <p class="time">From September 2020 to June 2022</p>
+                    </div>
+                    <div class="school">
+                        <strong class="work-title school-title">Online Courses</strong>
+                        <em class="workplace school-company">Udemy.com</em>
+                        <p class="work-description school-description">Finished online courses in HTML, css and javascript</p>
+                        <p class="time">May 2020</p>
+                    </div>
+                    <div class="school">
+                        <strong class="work-title school-title">High School</strong>
+                        <em class="workplace school-company">Thorén Innovation School, Stockholm</em>
+                        <p class="work-description school-description">A High School diploma in information and media technology</p>
+                        <p class="time">From August 2016 To June 2019</p>
+                    </div>
+                </div>
+                <div id="skills">
+                        <h3 class="work-title big">Other skills</h3>
+                        <div class="skill">
+                            <strong class="work-title skill-title">Scholarship</strong>
+                            <p class="work-description skill-description">I won a scholarship for the best <em>Gymnasiearbete</em> at my high school.</p>
+                        </div>
+                        <div class="skill">
+                            <strong class="work-title skill-title">Knowledge</strong>
+                            <p class="work-description skill-description">I have knowledge in programming languages as <em>HTML, CSS, JavaScript</em> and <em>Python.</em></p>
+                        </div>
+                        <div class="skill">
+                            <strong class="work-title skill-title">languages</strong>
+                            <p class="work-description skill-description">I speak fluent Swedish and English, and can also speak some Spanish.</p>
+                        </div>
                 </div>
             </div>
-            <div class="schools">
-                <h3 class="work-title big">Education</h3>
-                <div class="school">
-                    <strong class="work-title school-title">Vocational university</strong>
-                    <em class="workplace school-company">Medieinstitutet</em>
-                    <p class="work-description school-description">Studying the program Front End Developer at Medieinstitutet.</p>
-                    <p class="time">From September 2020 to June 2022</p>
-                </div>
-                <div class="school">
-                    <strong class="work-title school-title">Online Courses</strong>
-                    <em class="workplace school-company">Udemy.com</em>
-                    <p class="work-description school-description">Finished online courses in HTML, css and javascript</p>
-                    <p class="time">May 2020</p>
-                </div>
-                <div class="school">
-                    <strong class="work-title school-title">High School</strong>
-                    <em class="workplace school-company">Thorén Innovation School, Stockholm</em>
-                    <p class="work-description school-description">A High School diploma in information and media technology</p>
-                    <p class="time">From August 2016 To June 2019</p>
-                </div>
-            </div>
-            <div class="skills">
-                    <h3 class="work-title big">Other skills</h3>
-                    <div class="skill">
-                        <strong class="work-title skill-title">Scholarship</strong>
-                        <p class="work-description skill-description">I won a scholarship for the best <em>Gymnasiearbete</em> at my high school.</p>
-                    </div>
-                    <div class="skill">
-                        <strong class="work-title skill-title">Knowledge</strong>
-                        <p class="work-description skill-description">I have knowledge in programming languages as <em>HTML, CSS, JavaScript</em> and <em>Python.</em></p>
-                    </div>
-                    <div class="skill">
-                        <strong class="work-title skill-title">languages</strong>
-                        <p class="work-description skill-description">I speak fluent Swedish and English, and can also speak some Spanish.</p>
-                    </div>
-            </div>
+            
         </section>
         
         <section id="contact-section" class="contact" >
             <h2 id="contact" class="title-main">Contact</h2>
-            
+
             <div class="contactinfo">
                 <p>If you would like to contact me, here is my contact information</p>
-                <p>Email: marta.ballardini@gmail.com</p>
+                <p>Email: <a href="mailto:marta.ballardini@gmail.com" target="_blank">marta.ballardini@gmail.com</a></p>
                 <p>Phone: +46 700 623 959</p>
-
             </div>
+            <ul id="socials">
+                <li><a href="https://github.com/ballardinimarta" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/m%C3%A4rta-ballardini-403a6a165/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            <img src="img/bye.PNG" alt="">
+            <p>Thank u for visiting my website!</p>
         </section>
     
     </body>

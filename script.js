@@ -1,40 +1,21 @@
 $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+      document.getElementById("navButton").addEventListener('click', nav)
 });
 
+function nav () {
+  if (document.getElementById("times").style.display === "none") {
+    document.getElementById("bars").style.display = "none";
+    document.getElementById("times").style.display = "block";
+    document.getElementById("mySidebar").style.width = "250px";
+  } else {
+    document.getElementById("bars").style.display = "block";
+    document.getElementById("times").style.display = "none";
+    document.getElementById("mySidebar").style.width = "0px";
+  }
+  
 
 
-function openNav() {
-  var sidebar = document.getElementById('mySidebar');
-  var button = document.getElementById('main');
-  var buttonicon = document.getElementById('icon');
-
-  sidebar.classList.toggle('opened-sidebar');
-  button.classList.toggle('opened-button');
-  buttonicon.classList.toggle('crossicon');
 }
-
 
 
 // Function to change the color of the sidebar depending on which section you are on scroll
@@ -47,8 +28,8 @@ $(document).ready(function () {
       var third = document.getElementById("contact-section");
 
       var firsttotop = first.scrollHeight;
-      var sectotop = (first.scrollHeight + sec.scrollHeight);
-      var thirdtotop = (first.scrollHeight + sec.scrollHeight + third.scrollHeight);
+      var sectotop = (first.scrollHeight + sec.scrollHeight - 450);
+      var thirdtotop = (first.scrollHeight + sec.scrollHeight + third.scrollHeight -450);
 
       console.log( ScrollTop ,firsttotop, sectotop, thirdtotop);
    
@@ -62,7 +43,7 @@ $(document).ready(function () {
           document.getElementById("mySidebar").style.backgroundColor = "#63B4D1";
         }
        else{
-         document.getElementById("mySidebar").style.backgroundColor = "#b5b5b5";
+         document.getElementById("mySidebar").style.backgroundColor = "#d6ccfc";
        }
    });
 });
