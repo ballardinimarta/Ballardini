@@ -1,16 +1,17 @@
 $(document).ready(function(){
-      document.getElementById("navButton").addEventListener('click', nav)
+    $("#navButton").on('click', nav);
+    $(window).scroll(scrollColorChange);
 });
 
 function nav () {
   if (document.getElementById("times").style.display === "none") {
     document.getElementById("bars").style.display = "none";
     document.getElementById("times").style.display = "block";
-    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("sidebar").style.width = "250px";
   } else {
     document.getElementById("bars").style.display = "block";
     document.getElementById("times").style.display = "none";
-    document.getElementById("mySidebar").style.width = "0px";
+    document.getElementById("sidebar").style.width = "0px";
   }
   
 
@@ -19,31 +20,23 @@ function nav () {
 
 
 // Function to change the color of the sidebar depending on which section you are on scroll
-$(document).ready(function () {
-  $(window).scroll(function(){
-      var ScrollTop = parseInt($(window).scrollTop());
+function scrollColorChange (){
+  let ScrollTop = parseInt($(window).scrollTop());
 
-      var first = document.getElementById("about-me-section");
-      var sec = document.getElementById("work-section");
-      var third = document.getElementById("contact-section");
-
-      var firsttotop = first.scrollHeight;
-      var sectotop = (first.scrollHeight + sec.scrollHeight - 450);
-      var thirdtotop = (first.scrollHeight + sec.scrollHeight + third.scrollHeight -450);
-
-      console.log( ScrollTop ,firsttotop, sectotop, thirdtotop);
-   
-      if (ScrollTop >= firsttotop && ScrollTop < sectotop) {
-         document.getElementById("mySidebar").style.backgroundColor = "#cdf0c5";
-       }
-       else if (ScrollTop >= sectotop && ScrollTop < thirdtotop) {
-         document.getElementById("mySidebar").style.backgroundColor = "#e0aade";
-       }
-        else if (ScrollTop >= thirdtotop) {
-          document.getElementById("mySidebar").style.backgroundColor = "#63B4D1";
-        }
-       else{
-         document.getElementById("mySidebar").style.backgroundColor = "#d6ccfc";
-       }
-   });
-});
+  let aboutme = $("#about-me-section").offset();
+  let portfolio = $("#portfolio-section").offset();
+  let work = $("#work-section").offset();
+  let contact = $("#contact-section").offset();
+      
+  if (ScrollTop > aboutme.top && ScrollTop < portfolio.top) {
+    $("#sidebar").css("background-color", "#cdf0c5")
+  } else if (ScrollTop > portfolio.top && ScrollTop < work.top){
+    $("#sidebar").css("background-color", "#5fcc8d")
+  } else if (ScrollTop > work.top && ScrollTop < contact.top) {
+    $("#sidebar").css("background-color", "#e0aade")
+  } else if (ScrollTop > contact.top) {
+    $("#sidebar").css("background-color", "#63B4D1")
+  } else {
+    $("#sidebar").css("background-color", "#d6ccfc")
+  }
+}

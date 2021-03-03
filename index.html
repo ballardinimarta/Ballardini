@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="script.js"></script>
         <link rel="stylesheet" href="/css/main.css">
 
@@ -15,9 +17,10 @@
     </head>
 
     <body>
-        <div id="mySidebar" class="sidebar">
+        <div id="sidebar" class="sidebar">
             <a class="link" href="#header">Start.</a>
             <a class="link" href="#who-am-i">Who am i ?</a>
+            <a class="link" href="#portfolio">Portfolio.</a>
             <a class="link" href="#CV">CV.</a>
             <a class="link" href="#contact">Contact.</a>
         </div>
@@ -32,6 +35,7 @@
             <h1 id="nameTitle">Märta Ballardini</h1>
             <ul id="headingNav">
                 <li><a class="link" href="#who-am-i">Who am i ?</a></li>
+                <li><a class="link" href="#portfolio">Portfolio.</a></li>
                 <li><a class="link" href="#CV">CV.</a></li>
                 <li><a class="link" href="#contact">Contact.</a></li>
             </ul>
@@ -82,7 +86,96 @@
             </div>
             </div>
             
-        </section>            
+        </section>    
+        <section id="portfolio-section">
+            <h2 id="portfolio" class="title-main">Portfolio</h2>
+            <div id="portfoliowrapper">
+                <div class="projektcontainer">
+                    <div id="todolistnodejs" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/todolistauth.png" class="d-block w-100" alt="todolist">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/login.png" class="d-block w-100" alt="login page">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/register.png" class="d-block w-100" alt="register page">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/resetpass.png" class="d-block w-100" alt="reset password page">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todolistnodejs"  data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todolistnodejs"  data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    <p class="projekttitle">Todolist NodeJS</p>
+                    <p class="projektdescription">Assignment for school. A todolist with authentication, you need to sign in to use the list. You can register users, login as a register user and reset your password via an email link if you forget it. You can also edit, delete and make new todos.</p>
+                    <a href="https://github.com/ballardinimarta/nodejstodoAuth"  target="_blank" class="projektlink">github repo</a>
+                </div>
+                <div class="projektcontainer">
+                    <div id="todolistjs" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/todolistjs.png" class="d-block w-100" alt="todolist">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/unchecked.png" class="d-block w-100" alt="login page">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/checked.png" class="d-block w-100" alt="register page">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/removed.png" class="d-block w-100" alt="reset password page">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todolistjs"  data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todolistjs"  data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    <p class="projekttitle">Todolist Vanilla JavaScript</p>
+                    <p class="projektdescription">Assignment for school. A todolist where you can make new tasks, check done tasks and delete tasks. It also has a filter feature where you canm select to see Standard, Undone, Done, Removed. You can also bring back a removed Task.</p>
+                    <a href="https://github.com/ballardinimarta/todolist"  target="_blank" class="projektlink">github repo</a>
+                </div>
+                <!-- <div class="projektcontainer">
+                    <div id="jstodolist" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/besattstart.png" class="d-block w-100" alt="todolist">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/besattköp.png" class="d-block w-100" alt="login page">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/besattbutiker.png" class="d-block w-100" alt="register page">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#jstodolist"  data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#jstodolist"  data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    <p class="projekttitle">Besatt Magazine</p>
+                    <p class="projektdescription">A website for besatt magazine. Besatt is a analog paper magazine made by my friends. They needed a website to spread information about where you can buy the magazine and how you can order it from them.</p>
+                    <a href="https://github.com/ballardinimarta/BESATT" target="_blank" class="projektlink">github repo</a>
+                </div> -->
+            </div>
+        </section>        
 
         <section id="work-section" >
             <h2 id="CV" class="title-main">CV</h2>
