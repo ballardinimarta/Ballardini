@@ -28,13 +28,13 @@ function scrollColorChange (){
   let work = $("#work-section").offset();
   let contact = $("#contact-section").offset();
       
-  if (ScrollTop > aboutme.top && ScrollTop < portfolio.top) {
+  if (ScrollTop >= aboutme.top && ScrollTop < portfolio.top) {
     $("#sidebar").css("background-color", "#cdf0c5")
-  } else if (ScrollTop > portfolio.top && ScrollTop < work.top){
+  } else if (ScrollTop >= portfolio.top && ScrollTop < work.top){
     $("#sidebar").css("background-color", "#5fcc8d")
-  } else if (ScrollTop > work.top && ScrollTop < contact.top) {
+  } else if (ScrollTop >= work.top && ScrollTop < contact.top) {
     $("#sidebar").css("background-color", "#e0aade")
-  } else if (ScrollTop > contact.top) {
+  } else if (ScrollTop >= contact.top) {
     $("#sidebar").css("background-color", "#63B4D1")
   } else {
     $("#sidebar").css("background-color", "#d6ccfc")
