@@ -63,8 +63,12 @@ html {
         @media (max-width: 500px) {
           html body #header #headingNav {
             flex-direction: column;
-            justify-content: space-between; } }
-        html body #header #headingNav .link {
+            justify-content: space-between;
+            padding: 0; } }
+        @media (max-width: 500px) {
+          html body #header #headingNav li {
+            padding: 10px; } }
+        html body #header #headingNav li .link {
           text-decoration: none;
           color: inherit;
           margin-left: 30px;
@@ -72,10 +76,10 @@ html {
           font-weight: 300;
           font-size: 20px; }
           @media (max-width: 500px) {
-            html body #header #headingNav .link {
-              margin: 0;
-              padding: 20px; } }
-        html body #header #headingNav .link:hover {
+            html body #header #headingNav li .link {
+              padding: 5px;
+              margin: 0; } }
+        html body #header #headingNav li .link:hover {
           background-color: rgba(0, 0, 0, 0.4);
           font-weight: 700; }
     html body .title-main {
