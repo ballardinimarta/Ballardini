@@ -17,7 +17,7 @@ html {
         background-color: transparent; }
         html body #navDiv #navButton i {
           font-size: 30px;
-          color: black; }
+          color: white; }
         html body #navDiv #navButton #times {
           display: none; }
     html body #sidebar {
@@ -50,12 +50,11 @@ html {
       justify-content: center;
       text-align: center; }
       html body #header #nameTitle {
-        text-transform: uppercase;
-        font-family: 'Hanalei', cursive;
-        font-size: 500%; }
+        font-size: 400%;
+        font-weight: 500; }
         @media (max-width: 500px) {
           html body #header #nameTitle {
-            font-size: 200%; } }
+            font-size: 180%; } }
       html body #header #headingNav {
         list-style-type: none;
         display: flex;

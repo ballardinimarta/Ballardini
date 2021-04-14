@@ -19,7 +19,7 @@ html {
                 background-color: transparent;
                 i {
                     font-size: 30px;
-                    color: rgb(0, 0, 0);
+                    color: rgb(255, 255, 255);
                 }
                 #times {
                     display: none;
@@ -60,11 +60,10 @@ html {
             justify-content: center;
             text-align: center;
             #nameTitle {
-                text-transform: uppercase;
-                font-family: 'Hanalei', cursive;
-                font-size: 500%;
+                font-size: 400%;
+                font-weight: 500;
                 @include phone {
-                    font-size: 200%;
+                    font-size: 180%;
                 }
             }
             #headingNav{
